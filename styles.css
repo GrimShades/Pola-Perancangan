@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.form-section, .list-section, .result-section {
+    margin-bottom: 30px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.result-section {
+    text-align: center;
+}
+
+#result p {
+    background-color: #e7f3e7;
+    padding: 10px;
+    border: 1px solid #c8e6c8;
+    border-radius: 5px;
+    color: #333;
+}
+
+/* Styling untuk tombol New dan Save */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#newButton {
+    background-color: #FF5733;
+}
+
+#saveButton {
+    background-color: #3375FF;
+}
+
+#newButton:hover {
+    background-color: #E04C26;
+}
+
+#saveButton:hover {
+    background-color: #265CBF;
+}
+
+/* Styling untuk payer checkboxes */
+.payer-checkboxes {
+    display: flex;
+    flex-direction: column;
+}
+
+.payer-checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}

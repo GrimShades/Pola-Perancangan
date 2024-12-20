@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Bill Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Split Bill Calculator</h1>
+
+        <!-- Form untuk menambahkan orang yang membayar -->
+        <div class="form-section">
+            <h2>Add Payer</h2>
+            <input type="text" id="payerName" placeholder="Enter Payer Name" />
+            <button onclick="app.addPayer()">Add Payer</button>
+        </div>
+
+        <!-- List Payer -->
+        <div class="list-section">
+            <h2>Payers</h2>
+            <ul id="payer-list" class="list"></ul>
+        </div>
+
+        <!-- Form untuk menambahkan barang -->
+        <div class="form-section">
+            <h2>Add Item</h2>
+            <input type="text" id="itemName" placeholder="Enter Item Name" />
+            <input type="number" id="itemPrice" placeholder="Enter Item Price" />
+            <input type="number" id="itemQuantity" placeholder="Enter Item Quantity" value="1" />
+
+            <h3>Select Payers:</h3>
+            <div id="payer-checkboxes" class="payer-checkboxes"></div>
+
+            <button onclick="app.addItem()">Add Item</button>
+        </div>
+
+        <!-- List Barang -->
+        <div class="list-section">
+            <h2>Items</h2>
+            <ul id="item-list" class="list"></ul>
+        </div>
+
+        <!-- Button dan Hasil Perhitungan -->
+        <div class="result-section">
+            <button onclick="app.calculateTotals()">Calculate Totals</button>
+            <h2>Result</h2>
+            <div id="result"></div>
+
+            <!-- Tombol New dan Save -->
+            <div class="button-group">
+                <button id="newButton" onclick="app.resetApp()">New</button>
+                <button id="saveButton" onclick="app.saveScreenshot()">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
